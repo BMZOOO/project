@@ -19,13 +19,13 @@ struct BillView: View {
         NavigationView{
             VStack{
             HStack{
+               
             Text ("الاسم ")
-            
+                .padding()
                 Spacer()
                 
             Text ("\(Name)")
-               
-               
+                .padding()
             }
                 HStack{
                 Text ("الساعات")
@@ -38,7 +38,7 @@ struct BillView: View {
                 HStack{
                     
                 Text ("رقم الهاتف")
-                  
+                    .padding()
                     Spacer()
                 Text ("\(phone)")
                     .padding(.leading,20)
@@ -48,7 +48,7 @@ struct BillView: View {
                   
                 Text ("المبلغ")
                     Spacer()
-                    
+                        .padding()
                 Text ("\(cost)")
                     .padding(.leading,20)
                 
@@ -70,6 +70,7 @@ struct BillView: View {
                 })
             }
         }.navigationBarTitle("الفاتوره")
+        .padding(.leading,20)
     }
 }
 
